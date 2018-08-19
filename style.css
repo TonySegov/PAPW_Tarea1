@@ -121,3 +121,14 @@ li a {
         height:100%;
         width:100%;
 }
+
+
+tr:nth-child(odd){
+    background: #000000;
+    color: #FFFFFF;
+}
+ 
+tr:nth-child(even){
+    background: #FFFFFF;
+    color: #000000;
+}
