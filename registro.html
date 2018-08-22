@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Registro</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body class="registro">   
+        <div>
+                <ul class="menu">
+                        <div class="dropdown">
+                            <span>
+                                 <a class="cate" href="#cat">Categorías</a>
+                            </span>
+                            <div class="dropdown-content">
+                                <ul>
+                                    <li>
+                                        <a href="perfil.html">Perfil</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    <li>
+                        <a href="index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="registro.html">Registro</a>
+                    </li>
+                </ul>
+            </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    <h1> Registro de Usuario </h1>
+    <form action="" style="background-color: white">
+        <h3>Datos Generales</h3>
+        Nombre de Usuario: <input type="text" name="nombre" required placeholder="Ingresa tu nombre" autofocus>
+        E-mail: <input type="email" name="correo"  required placeholder="Algo@correo.com">
+        Contraseña: <input type="password" name="pass" required placeholder="********"><br><br>
+        Fecha de nacimiento: <input type="date" required name="nacimiento">
+        Estatura(cm): <input type="number" name="estatura" required placeholder="170"><br><br>
+        Hombre <input type="radio" name="genero" value="h">
+        Mujer <input type="radio" name="genero" value="m"> <br><br>
+        Color Favorito: <input type="color" name="color"><br><br>
+
+        <h3>Ocupación</h3>
+        Estudiante <input type="checkbox" name="ocupacion" value="ocu">
+        Maestro <input type="checkbox" name="ocupacion" value="ocu">
+        Director <input type="checkbox" name="ocupacion" value="ocu"><br><br>
+
+        <h3>Estado Civil</h3>
+        <select name="estadoC">
+            <option value="Soltero">Soltero</option>
+            <option value="Casado">Casado</option>
+            <option value="Complicado">Complicado</option>
+        </select><br><br>
+
+        <h3>Estado para tu Perfil</h3>
+        <textarea placeholder="¿Qué quieres que sepan de ti?" name="estadoP"></textarea><br><br>
+
+        Sube una imagen: <input type="file" name="imagen"><br><br>
+        <input type="submit" value="Terminar registro">
+        <input type="reset" value="Borrar los datos">
+    </form>
+</body>
+</html>
