@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Tarea 6</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>  
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script>
+            $(document).ready(function(){
+            $("#calcu").click(function(){
+                var n = $("#Lados").val();
+                alert("Resultado: " + (180 * (n - 2)/ n));
+            });
+
+            $("#calcu").hover(function(){
+                $(this).css("background-color", "black");
+                $(this).css("color", "white");
+            });
+
+            $("#calcu").mouseleave(function(){
+                $(this).css("background-color", "white");
+                $(this).css("color", "black");
+            });
+
+        });
+    </script>
+</head>
+<body style="background-color: skyblue">
+
+        <div class="container">
+            <h1>Cálculo de Ángulos de un Polígono Regular</h1>
+
+            <h2>Fórmula usada: (180 * (n - 2)) / n </h2>
+            
+            Lados del Poligono: <input type="text" id="Lados">
+            <input type="button" id="calcu" value="Calcular Angulos">
+        </div>
+
+</body>
+</html>
